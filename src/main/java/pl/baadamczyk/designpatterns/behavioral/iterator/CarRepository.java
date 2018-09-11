@@ -20,28 +20,25 @@ public class CarRepository implements Iterable<Car> {
     public Iterator<Car> iterator() {
         return new Iterator<Car>() {
 
-            int currentIndex = 0;
+            int currentIndex = -1;
 
             @Override
             public boolean hasNext() {
-                return currentIndex < carList.size() && carList.get(currentIndex) != null;
+                return currentIndex < carList.size() - 1;
             }
 
             @Override
             public Car next() {
-                return carList.get(currentIndex++);
+                return carList.get(++currentIndex);
             }
 
             @Override
             public void remove() {
-                --currentIndex;
 
                 if(State.SOLD.equals(carList.get(currentIndex).getState())){
                     carList.remove(carList.get(currentIndex));
-                    currentIndex++;
                 }
                 else {
-                    currentIndex++;
                     throw new UnsupportedOperationException("Cannot remove AVAILABLE car!");
                 }
             }
