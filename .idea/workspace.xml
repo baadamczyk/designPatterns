@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b80f7ee-1509-4fcc-a730-7679eb973113" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/baadamczyk/designpatterns/behavioral/iterator/CarRepository$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/baadamczyk/designpatterns/behavioral/iterator/CarRepository$1.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -11,40 +17,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarLotService.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="544">
-                    <caret line="47" column="43" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="43" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarLotServiceTest.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="453">
-                    <caret line="29" selection-start-line="29" selection-end-line="29" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="585399280">
@@ -85,14 +57,53 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="602375285">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Git file" value="1" />
+          <entry key="JAVA" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1122" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1122" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/Car.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="30">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonExampleTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,18 +111,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarRepository.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Class.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-                <element signature="e#796#797#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="193">
+              <caret line="3081" selection-start-line="3081" selection-end-line="3081" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -121,8 +134,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -160,6 +173,10 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarLotService.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarLotServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarRepository.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/singleton/SingletionClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonExampleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonClass.java" />
       </list>
     </option>
   </component>
@@ -176,14 +193,14 @@
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,46 +226,21 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="designpatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="designPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="iterator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="designpatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="designPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="designpatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="designPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="designpatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="designPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="iterator" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536669137378" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536867000225" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -256,6 +248,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.baadamczyk.designpatterns.creational.singleton" />
       <recent name="pl.baadamczyk.designpatterns.behavioral.iterator" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -263,6 +256,7 @@
       <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.baadamczyk.designpatterns.creational.singleton" />
       <recent name="pl.baadamczyk.designpatterns.behavioral.iterator" />
     </key>
   </component>
@@ -278,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CarLotServiceTest">
+  <component name="RunManager" selected="JUnit.SingletonExampleTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -300,34 +294,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarLotServiceTest.shouldRemoveAllSoldCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designPatterns" />
+    <configuration name="SingletonExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.baadamczyk.designpatterns.behavioral.iterator.*" />
+          <option name="PATTERN" value="pl.baadamczyk.designpatterns.creational.singleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.baadamczyk.designpatterns.behavioral.iterator" />
-      <option name="MAIN_CLASS_NAME" value="pl.baadamczyk.designpatterns.behavioral.iterator.CarLotServiceTest" />
-      <option name="METHOD_NAME" value="shouldRemoveAllSoldCars" />
+      <option name="PACKAGE_NAME" value="pl.baadamczyk.designpatterns.creational.singleton" />
+      <option name="MAIN_CLASS_NAME" value="pl.baadamczyk.designpatterns.creational.singleton.SingletonExampleTest" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.baadamczyk.designpatterns.creational.singleton.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.baadamczyk.designpatterns.creational.singleton" />
+      <option name="MAIN_CLASS_NAME" value="pl.baadamczyk.designpatterns.creational.singleton.SingletonExampleTest" />
+      <option name="METHOD_NAME" value="instanceShouldNotBeCreatedByReflection" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarLotServiceTest.shouldReturnAllAvailableCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designPatterns" />
+    <configuration name="SingletonExampleTest.shouldNotCreateNewInstance_whenUsingNewKeyword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.baadamczyk.designpatterns.behavioral.iterator.*" />
+          <option name="PATTERN" value="pl.baadamczyk.designpatterns.creational.singleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.baadamczyk.designpatterns.behavioral.iterator" />
-      <option name="MAIN_CLASS_NAME" value="pl.baadamczyk.designpatterns.behavioral.iterator.CarLotServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnAllAvailableCars" />
+      <option name="PACKAGE_NAME" value="pl.baadamczyk.designpatterns.creational.singleton" />
+      <option name="MAIN_CLASS_NAME" value="pl.baadamczyk.designpatterns.creational.singleton.SingletonExampleTest" />
+      <option name="METHOD_NAME" value="shouldNotCreateNewInstance_whenUsingNewKeyword" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingletonExampleTest.shouldReturnTheSameInstance_whenAccessingInTheSameThread" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.baadamczyk.designpatterns.creational.singleton.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.baadamczyk.designpatterns.creational.singleton" />
+      <option name="MAIN_CLASS_NAME" value="pl.baadamczyk.designpatterns.creational.singleton.SingletonExampleTest" />
+      <option name="METHOD_NAME" value="shouldReturnTheSameInstance_whenAccessingInTheSameThread" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -349,15 +375,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CarLotServiceTest.shouldReturnAllAvailableCars" />
       <item itemvalue="JUnit.CarLotServiceTest" />
-      <item itemvalue="JUnit.CarLotServiceTest.shouldRemoveAllSoldCars" />
+      <item itemvalue="JUnit.SingletonExampleTest.shouldNotCreateNewInstance_whenUsingNewKeyword" />
+      <item itemvalue="JUnit.SingletonExampleTest.shouldReturnTheSameInstance_whenAccessingInTheSameThread" />
+      <item itemvalue="JUnit.SingletonExampleTest.instanceShouldNotBeCreatedByReflection" />
+      <item itemvalue="JUnit.SingletonExampleTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SingletonExampleTest" />
+        <item itemvalue="JUnit.SingletonExampleTest.instanceShouldNotBeCreatedByReflection" />
+        <item itemvalue="JUnit.SingletonExampleTest.shouldReturnTheSameInstance_whenAccessingInTheSameThread" />
+        <item itemvalue="JUnit.SingletonExampleTest.shouldNotCreateNewInstance_whenUsingNewKeyword" />
         <item itemvalue="JUnit.CarLotServiceTest" />
-        <item itemvalue="JUnit.CarLotServiceTest.shouldRemoveAllSoldCars" />
-        <item itemvalue="JUnit.CarLotServiceTest.shouldReturnAllAvailableCars" />
       </list>
     </recent_temporary>
   </component>
@@ -375,51 +405,53 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarLotServiceTest - 2018.09.11 at 14h 05m 50s.xml">
-      <configuration name="CarLotServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarLotServiceTest_shouldRemoveAllSoldCars - 2018.09.11 at 14h 07m 05s.xml">
-      <configuration name="CarLotServiceTest.shouldRemoveAllSoldCars" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarLotServiceTest_shouldRemoveAllSoldCars - 2018.09.11 at 14h 09m 01s.xml">
-      <configuration name="CarLotServiceTest.shouldRemoveAllSoldCars" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarLotServiceTest_shouldRemoveAllSoldCars - 2018.09.11 at 14h 18m 24s.xml">
-      <configuration name="CarLotServiceTest.shouldRemoveAllSoldCars" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarLotServiceTest_shouldRemoveAllSoldCars - 2018.09.11 at 14h 19m 16s.xml">
-      <configuration name="CarLotServiceTest.shouldRemoveAllSoldCars" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarLotServiceTest - 2018.09.11 at 14h 21m 44s.xml">
-      <configuration name="CarLotServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarLotServiceTest - 2018.09.11 at 14h 29m 48s.xml">
-      <configuration name="CarLotServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarLotServiceTest - 2018.09.11 at 14h 30m 41s.xml">
-      <configuration name="CarLotServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarLotServiceTest - 2018.09.11 at 14h 32m 09s.xml">
-      <configuration name="CarLotServiceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CarLotServiceTest - 2018.09.11 at 14h 32m 20s.xml">
       <configuration name="CarLotServiceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SingletonExampleTest_shouldNotCreateNewInstance_whenUsingNewKeyword - 2018.09.13 at 21h 06m 37s.xml">
+      <configuration name="SingletonExampleTest.shouldNotCreateNewInstance_whenUsingNewKeyword" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingletonExampleTest_shouldReturnTheSameInstance_whenAccessingInTheSameThread - 2018.09.13 at 21h 10m 11s.xml">
+      <configuration name="SingletonExampleTest.shouldReturnTheSameInstance_whenAccessingInTheSameThread" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingletonExampleTest_shouldReturnTheSameInstance_whenAccessingInTheSameThread - 2018.09.13 at 21h 11m 44s.xml">
+      <configuration name="SingletonExampleTest.shouldReturnTheSameInstance_whenAccessingInTheSameThread" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingletonExampleTest_instanceShouldNotBeCreatedByReflection - 2018.09.13 at 21h 18m 57s.xml">
+      <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingletonExampleTest_instanceShouldNotBeCreatedByReflection - 2018.09.13 at 21h 19m 49s.xml">
+      <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingletonExampleTest_instanceShouldNotBeCreatedByReflection - 2018.09.13 at 21h 25m 35s.xml">
+      <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingletonExampleTest_instanceShouldNotBeCreatedByReflection - 2018.09.13 at 21h 25m 50s.xml">
+      <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingletonExampleTest_instanceShouldNotBeCreatedByReflection - 2018.09.13 at 21h 27m 16s.xml">
+      <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingletonExampleTest_instanceShouldNotBeCreatedByReflection - 2018.09.13 at 21h 27m 45s.xml">
+      <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="0" y="30" width="1920" height="1049" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16950959" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17129135" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SonarLint" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32893288" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32852387" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -429,6 +461,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32893288" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32893288" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="11" />
+      <window_info anchor="right" id="Google Cloud Storage" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -438,6 +471,38 @@
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17129135" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SonarLint" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.32852387" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39933994" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32893288" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32893288" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="13" />
+      <window_info anchor="right" id="Google Cloud Storage" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -452,34 +517,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarLotServiceTest.groovy" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.0/junit-jupiter-api-5.3.0.jar!/org/junit/jupiter/api/Test.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.0/junit-jupiter-api-5.3.0-sources.jar!/org/junit/jupiter/api/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.2/lombok-1.18.2.jar!/lombok/Data.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.2/lombok-1.18.2-sources.jar!/lombok/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.0/junit-jupiter-api-5.3.0.jar!/org/junit/jupiter/api/Test.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.0/junit-jupiter-api-5.3.0-sources.jar!/org/junit/jupiter/api/Test.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.2/lombok-1.18.2.jar!/lombok/Data.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.2/lombok-1.18.2-sources.jar!/lombok/Data.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/Brand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -494,86 +535,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/ThrowableAssert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#423#424#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/AssertionsForClassTypes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="292" selection-start-line="292" selection-end-line="292" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/Assertions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="430" selection-start-line="430" selection-end-line="430" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/ThrowableTypeAssert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/AbstractThrowableAssert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/ThrowableAssertAlternative.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.3.0/junit-platform-commons-1.3.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="235" selection-start-line="235" selection-end-line="235" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/ThrowableAssert.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/AssertionsForClassTypes.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/Assertions.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/ThrowableTypeAssert.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/AbstractThrowableAssert.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/ThrowableAssertAlternative.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.3.0/junit-platform-commons-1.3.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/State.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarLotServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,17 +559,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarLotServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="345">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="3081" selection-start-line="3081" selection-end-line="3081" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonExampleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
