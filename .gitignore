@@ -69,6 +69,7 @@ out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
+.idea/**
 
 # JIRA plugin
 atlassian-ide-plugin.xml
@@ -85,3 +86,8 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+/.idea/workspace.xml
+target/classes/pl/baadamczyk/designpatterns/creational/
+target/generated-sources/
+target/generated-test-sources/
+target/test-classes/pl/baadamczyk/designpatterns/creational/
