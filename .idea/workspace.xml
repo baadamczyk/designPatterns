@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b80f7ee-1509-4fcc-a730-7679eb973113" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/builder/CarConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/builder/CarConfigurationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/prototype/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/prototype/VehicleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,50 +65,46 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="java" value="8" />
+          <entry key="gitignore" value="2" />
+          <entry key="java" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Git file" value="1" />
-          <entry key="JAVA" value="8" />
+          <entry key="Git file" value="2" />
+          <entry key="JAVA" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2434" />
+          <entry key="gitignore" value="2" />
+          <entry key="java" value="3275" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2434" />
+          <entry key="Git file" value="2" />
+          <entry key="JAVA" value="3275" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/builder/CarConfiguration.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/prototype/Vehicle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-              <folding>
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#943#944#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/builder/CarConfigurationTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/prototype/VehicleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+            <state relative-caret-position="150">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,6 +120,7 @@
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -160,7 +157,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarLotService.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarLotServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarRepository.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/singleton/SingletionClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonExampleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/singleton/SingletonClass.java" />
@@ -168,6 +164,12 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/builder/CarConfigurationBuilder.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/builder/CarConfigurationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/builder/CarConfiguration.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/prototype/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/prototype/Device.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/prototype/CustomCloneable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/prototype/PrototypeExampleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/prototype/VehicleTest.java" />
       </list>
     </option>
   </component>
@@ -178,7 +180,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -248,6 +250,16 @@
               <item name="designpatterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="designPatterns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="designpatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="creational" type="462c0819:PsiDirectoryNode" />
+              <item name="prototype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="designpatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -295,7 +307,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="plugins&#9;ACTION&#9;WelcomeScreen.Plugins" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536873854909" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536877261611" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -303,10 +315,11 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.baadamczyk.designpatterns.creational.prototype" />
       <recent name="pl.baadamczyk.designpatterns.creational.builder" />
       <recent name="pl.baadamczyk.designpatterns.creational.singleton" />
       <recent name="pl.baadamczyk.designpatterns.behavioral.iterator" />
@@ -316,6 +329,7 @@
       <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.baadamczyk.designpatterns.creational.prototype" />
       <recent name="pl.baadamczyk.designpatterns.creational.singleton" />
       <recent name="pl.baadamczyk.designpatterns.behavioral.iterator" />
     </key>
@@ -332,7 +346,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CarConfigurationTest">
+  <component name="RunManager" selected="JUnit.VehicleTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -386,34 +400,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VehicleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.baadamczyk.designpatterns.creational.singleton.*" />
+          <option name="PATTERN" value="pl.baadamczyk.designpatterns.creational.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.baadamczyk.designpatterns.creational.singleton" />
-      <option name="MAIN_CLASS_NAME" value="pl.baadamczyk.designpatterns.creational.singleton.SingletonExampleTest" />
-      <option name="METHOD_NAME" value="instanceShouldNotBeCreatedByReflection" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="pl.baadamczyk.designpatterns.creational.prototype" />
+      <option name="MAIN_CLASS_NAME" value="pl.baadamczyk.designpatterns.creational.prototype.VehicleTest" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingletonExampleTest.shouldReturnTheSameInstance_whenAccessingInTheSameThread" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VehicleTest.shouldCloneExistingInstance_whenUsingProvidedInterface" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.baadamczyk.designpatterns.creational.singleton.*" />
+          <option name="PATTERN" value="pl.baadamczyk.designpatterns.creational.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.baadamczyk.designpatterns.creational.singleton" />
-      <option name="MAIN_CLASS_NAME" value="pl.baadamczyk.designpatterns.creational.singleton.SingletonExampleTest" />
-      <option name="METHOD_NAME" value="shouldReturnTheSameInstance_whenAccessingInTheSameThread" />
+      <option name="PACKAGE_NAME" value="pl.baadamczyk.designpatterns.creational.prototype" />
+      <option name="MAIN_CLASS_NAME" value="pl.baadamczyk.designpatterns.creational.prototype.VehicleTest" />
+      <option name="METHOD_NAME" value="shouldCloneExistingInstance_whenUsingProvidedInterface" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -435,19 +447,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SingletonExampleTest.shouldReturnTheSameInstance_whenAccessingInTheSameThread" />
-      <item itemvalue="JUnit.SingletonExampleTest.instanceShouldNotBeCreatedByReflection" />
       <item itemvalue="JUnit.SingletonExampleTest" />
       <item itemvalue="JUnit.CarConfigurationTest" />
       <item itemvalue="JUnit.CarConfigurationTest.shouldCreateCarWithFullSpecs" />
+      <item itemvalue="JUnit.VehicleTest.shouldCloneExistingInstance_whenUsingProvidedInterface" />
+      <item itemvalue="JUnit.VehicleTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VehicleTest" />
+        <item itemvalue="JUnit.VehicleTest.shouldCloneExistingInstance_whenUsingProvidedInterface" />
         <item itemvalue="JUnit.CarConfigurationTest" />
         <item itemvalue="JUnit.CarConfigurationTest.shouldCreateCarWithFullSpecs" />
         <item itemvalue="JUnit.SingletonExampleTest" />
-        <item itemvalue="JUnit.SingletonExampleTest.instanceShouldNotBeCreatedByReflection" />
-        <item itemvalue="JUnit.SingletonExampleTest.shouldReturnTheSameInstance_whenAccessingInTheSameThread" />
       </list>
     </recent_temporary>
   </component>
@@ -465,24 +477,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SingletonExampleTest_instanceShouldNotBeCreatedByReflection - 2018.09.13 at 21h 19m 49s.xml">
-      <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SingletonExampleTest_instanceShouldNotBeCreatedByReflection - 2018.09.13 at 21h 25m 35s.xml">
-      <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SingletonExampleTest_instanceShouldNotBeCreatedByReflection - 2018.09.13 at 21h 25m 50s.xml">
-      <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SingletonExampleTest_instanceShouldNotBeCreatedByReflection - 2018.09.13 at 21h 27m 16s.xml">
-      <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SingletonExampleTest_instanceShouldNotBeCreatedByReflection - 2018.09.13 at 21h 27m 45s.xml">
-      <configuration name="SingletonExampleTest.instanceShouldNotBeCreatedByReflection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarConfigurationTest - 2018.09.13 at 23h 13m 28s.xml">
-      <configuration name="CarConfigurationTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CarConfigurationTest_shouldCreateCarWithFullSpecs - 2018.09.13 at 23h 14m 00s.xml">
       <configuration name="CarConfigurationTest.shouldCreateCarWithFullSpecs" configurationId="JUnit" />
     </history-entry>
@@ -494,6 +488,24 @@
     </history-entry>
     <history-entry file="CarConfigurationTest - 2018.09.13 at 23h 15m 37s.xml">
       <configuration name="CarConfigurationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarConfigurationTest - 2018.09.13 at 23h 24m 11s.xml">
+      <configuration name="CarConfigurationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrototypeExampleTest_shouldCloneExistingInstance_whenUsingProvidedInterface - 2018.09.14 at 00h 05m 34s.xml">
+      <configuration name="PrototypeExampleTest.shouldCloneExistingInstance_whenUsingProvidedInterface" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrototypeExampleTest_shouldCloneExistingInstance_whenUsingProvidedInterface - 2018.09.14 at 00h 06m 02s.xml">
+      <configuration name="PrototypeExampleTest.shouldCloneExistingInstance_whenUsingProvidedInterface" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrototypeExampleTest_shouldCloneExistingInstance_whenUsingProvidedInterface - 2018.09.14 at 00h 08m 08s.xml">
+      <configuration name="PrototypeExampleTest.shouldCloneExistingInstance_whenUsingProvidedInterface" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrototypeExampleTest_shouldCloneExistingInstance_whenUsingProvidedInterface - 2018.09.14 at 00h 11m 23s.xml">
+      <configuration name="PrototypeExampleTest.shouldCloneExistingInstance_whenUsingProvidedInterface" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VehicleTest - 2018.09.14 at 00h 20m 25s.xml">
+      <configuration name="VehicleTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -508,16 +520,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32852387" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32963374" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32893288" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32893288" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32852387" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="13" />
@@ -623,9 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/behavioral/iterator/CarRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -678,15 +687,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/builder/CarConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="390">
           <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
           <folding>
             <element signature="e#427#428#0" expanded="true" />
             <element signature="e#462#463#0" expanded="true" />
             <element signature="e#886#887#0" expanded="true" />
             <element signature="e#943#944#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="189" column="75" lean-forward="true" selection-start-line="189" selection-start-column="75" selection-end-line="189" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/prototype/Device.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/prototype/CustomCloneable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/prototype/PrototypeExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/baadamczyk/designpatterns/creational/prototype/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/baadamczyk/designpatterns/creational/prototype/VehicleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
