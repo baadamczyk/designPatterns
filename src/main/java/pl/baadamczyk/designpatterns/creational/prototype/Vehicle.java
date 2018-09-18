@@ -2,6 +2,7 @@ package pl.baadamczyk.designpatterns.creational.prototype;
 
 import lombok.Value;
 
+// Prototype returns new (cloned) instance of already defined object
 @Value(staticConstructor = "of")
 public class Vehicle implements Cloneable {
 

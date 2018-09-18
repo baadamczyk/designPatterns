@@ -16,6 +16,7 @@ public class CarRepository implements Iterable<Car> {
         carList.addAll(cars);
     }
 
+    //Implementing iterator for this repository
     @Override
     public Iterator<Car> iterator() {
         return new Iterator<Car>() {

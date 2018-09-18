@@ -1,5 +1,6 @@
 package pl.baadamczyk.designpatterns.creational.factory;
 
+//This simple factory returns different car type for different given param
 public class CarFactory {
 
   public static Car getInstance(String type) {

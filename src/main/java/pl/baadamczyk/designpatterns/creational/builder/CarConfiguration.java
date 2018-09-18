@@ -15,6 +15,7 @@ public class CarConfiguration {
         this.tyreType = builder.tyreType;
     }
 
+    // Builder implementes in simmilar fashion as in Lombok
     public static Builder builder() {
         return new Builder();
     }
@@ -31,6 +32,7 @@ public class CarConfiguration {
             this.tyreType = "AllWeather";
         }
 
+        // Builder segments are returning the builder itself as long as we want to actually retreive the object
         public Builder color(String color) {
             this.color = color;
             return this;

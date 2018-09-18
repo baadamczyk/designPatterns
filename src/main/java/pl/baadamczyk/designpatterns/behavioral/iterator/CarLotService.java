@@ -29,6 +29,7 @@ public class CarLotService {
         ));
     }
 
+    // Iterator usage
     public List<String> getAllCars() {
         List<String> carListing = new ArrayList<>();
         iterator = repository.iterator();
