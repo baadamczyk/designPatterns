@@ -1,29 +1,52 @@
 package pl.baadamczyk.designpatterns.structural.decorator;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class StringInputEnhancerTest {
 
-  @Test
-  public void shouldDelimitInput() {
-    String inputString = "BOKKA:WHAT A DAY|HEALTH:TEARS|NIGEL STANFORD:CYMATICS";
-    String expectedOutputString = "BOKKA - WHAT A DAY | HEALTH - TEARS | NIGEL STANFORD - CYMATICS";
-    InputDelimiter delimiter = new InputDelimiter(inputString);
+    @Test
+    public void shouldDelimitInput() {
+        DataWrapper inputData = new DataWrapper("BOKKA:WHAT A DAY|HEALTH:TEARS|NIGEL STANFORD:CYMATICS");
+        DataWrapper expectedOutput = new DataWrapper("BOKKA - WHAT A DAY | HEALTH - TEARS | NIGEL STANFORD - CYMATICS");
+        InputDelimiter delimiter = new InputDelimiter(inputData);
 
-    assertThat(delimiter.print()).isNotNull().isEqualTo(expectedOutputString);
-  }
+        assertThat(delimiter.getDataString()).isNotNull().isEqualTo(expectedOutput.getDataString());
+    }
 
-  @Test
-  @Disabled("Not implemented")
-  public void shouldFormatInput_givenDelimitedString() {
-    String inputString = "BOKKA:WHAT A DAY|HEALTH:TEARS|NIGEL STANFORD:CYMATICS";
-    String expectedOutputString =
-        "Artist: BOKKA Title: WHAT A DAY | Artist: HEALTH Title: TEARS | Artist: NIGEL STANFORD Title: CYMATICS";
+    @Test
+    public void shouldFormatInput() {
+        DataWrapper inputData = new DataWrapper("BOKKA:WHAT A DAY|HEALTH:TEARS|NIGEL STANFORD:CYMATICS");
+        DataWrapper expectedOutput =
+                new DataWrapper("**** BOKKA:WHAT A DAY|HEALTH:TEARS|NIGEL STANFORD:CYMATICS ****");
 
-    InputDelimiter delimiter = new InputDelimiter(inputString);
-    InputFormatter formatter = new InputFormatter(delimiter);
+        InputFormatter formatter = new InputFormatter(inputData);
 
-    assertThat(formatter.print()).isNotNull().isEqualTo(expectedOutputString);
-  }
+        assertThat(formatter.getDataString()).isNotNull().isEqualTo(expectedOutput.getDataString());
+    }
+
+    @Test
+    public void shouldChainDecorators() {
+        DataWrapper inputData = new DataWrapper("BOKKA:WHAT A DAY|HEALTH:TEARS|NIGEL STANFORD:CYMATICS");
+        DataWrapper expectedOutput =
+                new DataWrapper("**** BOKKA - WHAT A DAY | HEALTH - TEARS | NIGEL STANFORD - CYMATICS ****");
+
+        InputDelimiter delimiter = new InputDelimiter(inputData);
+        InputFormatter formatter = new InputFormatter(delimiter);
+
+        assertThat(formatter.getDataString()).isNotNull().isEqualTo(expectedOutput.getDataString());
+    }
+
+    @Test
+    public void shouldChainDecorators_givenReversedDecoratorOrger() {
+        DataWrapper inputData = new DataWrapper("BOKKA:WHAT A DAY|HEALTH:TEARS|NIGEL STANFORD:CYMATICS");
+        DataWrapper expectedOutput =
+                new DataWrapper("**** BOKKA - WHAT A DAY | HEALTH - TEARS | NIGEL STANFORD - CYMATICS ****");
+
+        InputFormatter formatter = new InputFormatter(inputData);
+        InputDelimiter delimiter = new InputDelimiter(formatter);
+
+        assertThat(delimiter.getDataString()).isNotNull().isEqualTo(expectedOutput.getDataString());
+    }
 }
