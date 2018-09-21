@@ -26,8 +26,8 @@ class CarFactoryTest {
     Car car = CarFactory.getInstance(Brand.AUDI).getCarInstance(Type.COUPE);
 
     assertThat(car)
-            .isNotNull()
-            .hasFieldOrPropertyWithValue("type", "COUPE")
-            .hasFieldOrPropertyWithValue("modelName", "S5");
+        .isNotNull()
+        .hasFieldOrPropertyWithValue("type", "COUPE")
+        .hasFieldOrPropertyWithValue("modelName", "S5");
   }
 }
