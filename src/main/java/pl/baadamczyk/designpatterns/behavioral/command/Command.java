@@ -5,6 +5,7 @@ package pl.baadamczyk.designpatterns.behavioral.command;
 */
 public interface Command {
 
-    void execute();
-    void rollback();
+  void execute();
+
+  void rollback();
 }

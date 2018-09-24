@@ -1,5 +1,8 @@
 package pl.baadamczyk.designpatterns.behavioral.command;
 
+/*
+  Receiver
+*/
 public class Car {
 
   private boolean areDoorLocked;

@@ -32,7 +32,6 @@ public class CommandExampleTest {
         .hasFieldOrPropertyWithValue("areDoorOpen", false);
   }
 
-
   @Test
   public void shouldCloseTheDoor_whenCloseCommandIsSent() {
     Car car = Car.ofState(false, true);
