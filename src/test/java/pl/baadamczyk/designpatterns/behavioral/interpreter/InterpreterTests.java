@@ -21,7 +21,7 @@ public class InterpreterTests {
 
   @Test
   public void shouldFindCompleteStructure_givenCompleteContext() {
-    String context = "# ? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent";
+    String context = "? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent";
 
     List<String> expectedAggregates = Lists.newArrayList("ResumeAggregate");
     Map<String, List<String>> expectedCommands =
@@ -33,7 +33,7 @@ public class InterpreterTests {
             .put("ResumeAggregate", Lists.newArrayList("ResumeCreatedEvent"))
             .build();
 
-    InterpretationResult result = definedInterpreter.interpet(context);
+    InterpretationResult result = definedInterpreter.interpret(context);
 
     assertThat(result)
         .hasFieldOrPropertyWithValue("aggregates", expectedAggregates)
@@ -45,7 +45,7 @@ public class InterpreterTests {
   @Test
   public void shouldFindMultipleCommands_givenCompleteContext() {
     String context =
-        "# ? ResumeAggregate >> CreateResumeCommand >> ArchiveResumeCommand << ResumeCreatedEvent";
+        "? ResumeAggregate >> CreateResumeCommand >> ArchiveResumeCommand << ResumeCreatedEvent";
 
     List<String> expectedAggregates = Lists.newArrayList("ResumeAggregate");
     Map<String, List<String>> expectedCommands =
@@ -59,7 +59,7 @@ public class InterpreterTests {
             .put("ResumeAggregate", Lists.newArrayList("ResumeCreatedEvent"))
             .build();
 
-    InterpretationResult result = definedInterpreter.interpet(context);
+    InterpretationResult result = definedInterpreter.interpret(context);
 
     assertThat(result)
         .hasFieldOrPropertyWithValue("aggregates", expectedAggregates)
@@ -71,7 +71,7 @@ public class InterpreterTests {
   @Test
   public void shouldFindMultipleEvents_givenCompleteContext() {
     String context =
-        "# ? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent << ResumeArchivedEvent";
+        "? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent << ResumeArchivedEvent";
 
     List<String> expectedAggregates = Lists.newArrayList("ResumeAggregate");
     Map<String, List<String>> expectedCommands =
@@ -83,7 +83,7 @@ public class InterpreterTests {
             .put("ResumeAggregate", Lists.newArrayList("ResumeCreatedEvent", "ResumeArchivedEvent"))
             .build();
 
-    InterpretationResult result = definedInterpreter.interpet(context);
+    InterpretationResult result = definedInterpreter.interpret(context);
 
     assertThat(result)
         .hasFieldOrPropertyWithValue("aggregates", expectedAggregates)
@@ -95,7 +95,7 @@ public class InterpreterTests {
   @Test
   public void shouldFindMultipleStructures_givenCompleteContext() {
     String context =
-        "# ? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent # ? EmployeeAggregate >> CreateEmployeeCommand << EmployeeCreatedEvent";
+        "? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent ? EmployeeAggregate >> CreateEmployeeCommand << EmployeeCreatedEvent";
 
     List<String> expectedAggregates = Lists.newArrayList("ResumeAggregate", "EmployeeAggregate");
     Map<String, List<String>> expectedCommands =
@@ -109,7 +109,7 @@ public class InterpreterTests {
             .put("EmployeeAggregate", Lists.newArrayList("EmployeeCreatedEvent"))
             .build();
 
-    InterpretationResult result = definedInterpreter.interpet(context);
+    InterpretationResult result = definedInterpreter.interpret(context);
 
     assertThat(result)
         .hasFieldOrPropertyWithValue("aggregates", expectedAggregates)
@@ -120,7 +120,7 @@ public class InterpreterTests {
 
   @Test
   public void shouldReportCommandWithoutAggregate_givenContextWithCommandAndEventOnly() {
-    String context = "# >> CreateResumeCommand";
+    String context = ">> CreateResumeCommand";
 
     List<String> expectedAggregates = Lists.newArrayList();
     Map<String, List<String>> expectedCommands =
@@ -132,12 +132,19 @@ public class InterpreterTests {
             .put("ResumeAggregate", Lists.newArrayList())
             .build();
 
-    InterpretationResult result = definedInterpreter.interpet(context);
+    InterpretationResult result = definedInterpreter.interpret(context);
 
     assertThat(result)
         .hasFieldOrPropertyWithValue("aggregates", expectedAggregates)
         .hasFieldOrPropertyWithValue("commands", expectedCommands)
         .hasFieldOrPropertyWithValue("events", expectedEvents);
     assertThat(result.getErrors()).contains("NO AGGREGATE at 0");
+  }
+
+  @Test
+  public void dummy() {
+    String context = "? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent";
+
+    System.out.println(SyntaxUtility.tokenize(context).toString());
   }
 }
