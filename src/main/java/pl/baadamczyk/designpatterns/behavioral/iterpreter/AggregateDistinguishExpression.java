@@ -1,4 +1,4 @@
-package pl.baadamczyk.designpatterns.behavioral.interpreter;
+package pl.baadamczyk.designpatterns.behavioral.iterpreter;
 
 public class AggregateDistinguishExpression implements Expression {
     @Override

@@ -4,6 +4,9 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import pl.baadamczyk.designpatterns.behavioral.iterpreter.Expression;
+import pl.baadamczyk.designpatterns.behavioral.iterpreter.InterpretationResult;
+import pl.baadamczyk.designpatterns.behavioral.iterpreter.SyntaxUtility;
 
 import java.util.List;
 import java.util.Map;
@@ -21,7 +24,7 @@ public class InterpreterTests {
 
   @Test
   public void shouldFindCompleteStructure_givenCompleteContext() {
-    String context = "? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent";
+    String context = "SET ResumeAggregate WITH_COMMANDS CreateResumeCommand WITH_EVENTS ResumeCreatedEvent";
 
     List<String> expectedAggregates = Lists.newArrayList("ResumeAggregate");
     Map<String, List<String>> expectedCommands =
@@ -45,7 +48,7 @@ public class InterpreterTests {
   @Test
   public void shouldFindMultipleCommands_givenCompleteContext() {
     String context =
-        "? ResumeAggregate >> CreateResumeCommand >> ArchiveResumeCommand << ResumeCreatedEvent";
+        "SET ResumeAggregate WITH_COMMANDS CreateResumeCommand ArchiveResumeCommand WITH_EVENTS ResumeCreatedEvent";
 
     List<String> expectedAggregates = Lists.newArrayList("ResumeAggregate");
     Map<String, List<String>> expectedCommands =
@@ -71,7 +74,7 @@ public class InterpreterTests {
   @Test
   public void shouldFindMultipleEvents_givenCompleteContext() {
     String context =
-        "? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent << ResumeArchivedEvent";
+        "SET ResumeAggregate WITH_COMMANDS CreateResumeCommand WITH_EVENTS ResumeCreatedEvent ResumeArchivedEvent";
 
     List<String> expectedAggregates = Lists.newArrayList("ResumeAggregate");
     Map<String, List<String>> expectedCommands =
@@ -95,7 +98,8 @@ public class InterpreterTests {
   @Test
   public void shouldFindMultipleStructures_givenCompleteContext() {
     String context =
-        "? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent ? EmployeeAggregate >> CreateEmployeeCommand << EmployeeCreatedEvent";
+        "SET ResumeAggregate WITH_COMMANDS CreateResumeCommand WITH_EVENTS ResumeCreatedEvent " +
+                "SET EmployeeAggregate WITH_COMMANDS CreateEmployeeCommand WITH_EVENTS EmployeeCreatedEvent";
 
     List<String> expectedAggregates = Lists.newArrayList("ResumeAggregate", "EmployeeAggregate");
     Map<String, List<String>> expectedCommands =
@@ -120,7 +124,7 @@ public class InterpreterTests {
 
   @Test
   public void shouldReportCommandWithoutAggregate_givenContextWithCommandAndEventOnly() {
-    String context = ">> CreateResumeCommand";
+    String context = "WITH_COMMANDS CreateResumeCommand";
 
     List<String> expectedAggregates = Lists.newArrayList();
     Map<String, List<String>> expectedCommands =
@@ -143,8 +147,11 @@ public class InterpreterTests {
 
   @Test
   public void dummy() {
-    String context = "? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent";
+    //    String context = "? ResumeAggregate >> CreateResumeCommand << ResumeCreatedEvent";
+    String context =
+            "SET ResumeAggregate WITH_COMMANDS CreateResumeCommand WITH_EVENTS ResumeCreatedEvent " +
+                    "SET EmployeeAggregate WITH_COMMANDS CreateEmployeeCommand WITH_EVENTS EmployeeCreatedEvent";
 
-    System.out.println(SyntaxUtility.tokenize(context).toString());
+    SyntaxUtility.parse(context);
   }
 }
