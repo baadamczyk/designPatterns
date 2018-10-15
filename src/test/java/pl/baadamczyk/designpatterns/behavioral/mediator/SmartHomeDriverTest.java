@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class SmartHomeDriverTest {
 
   private SmartHomeDriver mediator;
@@ -32,9 +34,14 @@ public class SmartHomeDriverTest {
 
   @Test
   public void shouldCloseAllTheDoors() {
-    mediator.registerDoor(Arrays.asList(frontDoor, backDoor, basementDoor));
+    frontDoor.setClosed(false);
+    backDoor.setClosed(false);
+    basementDoor.setClosed(false);
 
-    Command closeAllDoorsCommand = CloseAllDoorsCommand(mediator);
+    mediator.registerDoors(Arrays.asList(frontDoor, backDoor, basementDoor));
+
+    Command closeAllDoorsCommand = new CloseAllDoorsCommand(mediator);
+    closeAllDoorsCommand.execute();
 
     assertThat(frontDoor.isClosed()).isTrue();
     assertThat(backDoor.isClosed()).isTrue();
@@ -43,9 +50,14 @@ public class SmartHomeDriverTest {
 
   @Test
   public void shouldOpenAllTheDoors() {
+    frontDoor.setClosed(true);
+    backDoor.setClosed(true);
+    basementDoor.setClosed(true);
+
     mediator.registerDoors(Arrays.asList(frontDoor, backDoor, basementDoor));
 
-    Command openAllDoorsCommand = OpenAllDoors(mediator);
+    Command openAllDoorsCommand = new OpenAllDoors(mediator);
+    openAllDoorsCommand.execute();
 
     assertThat(frontDoor.isClosed()).isFalse();
     assertThat(backDoor.isClosed()).isFalse();
@@ -54,10 +66,18 @@ public class SmartHomeDriverTest {
 
   @Test
   public void shouldTurnOffAllTheLights() {
+    kitchenLight.setOn(true);
+    bathroomLight.setOn(true);
+    bedroomLight.setOn(true);
+    hallLight.setOn(true);
+    bathroomLight.setOn(true);
+
+
     mediator.registerLights(
         Arrays.asList(kitchenLight, bathroomLight, bedroomLight, hallLight, basementLight));
 
-    Command closeAllDoorsCommand = TurnOffAllLightsCommand(mediator);
+    Command turnOffAllLightsCommand = new TurnOffAllLightsCommand(mediator);
+    turnOffAllLightsCommand.execute();
 
     assertThat(kitchenLight.isOn()).isFalse();
     assertThat(bathroomLight.isOn()).isFalse();
@@ -68,10 +88,17 @@ public class SmartHomeDriverTest {
 
   @Test
   public void shouldTurnOnAllTheLights() {
+    kitchenLight.setOn(false);
+    bathroomLight.setOn(false);
+    bedroomLight.setOn(false);
+    hallLight.setOn(false);
+    bathroomLight.setOn(false);
+
     mediator.registerLights(
         Arrays.asList(kitchenLight, bathroomLight, bedroomLight, hallLight, basementLight));
 
-    Command closeAllDoorsCommand = TurnOnAllLightsCommand(mediator);
+    Command turnOnAllLightsCommand = new TurnOnAllLightsCommand(mediator);
+    turnOnAllLightsCommand.execute();
 
     assertThat(kitchenLight.isOn()).isTrue();
     assertThat(bathroomLight.isOn()).isTrue();
@@ -82,9 +109,21 @@ public class SmartHomeDriverTest {
 
   @Test
   public void shouldOpenTheHome() {
+    frontDoor.setClosed(true);
+    backDoor.setClosed(true);
+    basementDoor.setClosed(true);
+    kitchenLight.setOn(false);
+    bathroomLight.setOn(false);
+    bedroomLight.setOn(false);
+    hallLight.setOn(false);
+    bathroomLight.setOn(false);
+
     mediator.registerDoors(Arrays.asList(frontDoor, backDoor, basementDoor));
     mediator.registerLights(
         Arrays.asList(kitchenLight, bathroomLight, bedroomLight, hallLight, basementLight));
+
+    Command openTheHomeCommand = new OpenTheHomeCommand(mediator);
+    openTheHomeCommand.execute();
 
     assertThat(frontDoor.isClosed()).isFalse();
     assertThat(backDoor.isClosed()).isFalse();
@@ -98,9 +137,21 @@ public class SmartHomeDriverTest {
 
   @Test
   public void shouldCloseTheHome() {
+    frontDoor.setClosed(false);
+    backDoor.setClosed(false);
+    basementDoor.setClosed(false);
+    kitchenLight.setOn(true);
+    bathroomLight.setOn(true);
+    bedroomLight.setOn(true);
+    hallLight.setOn(true);
+    bathroomLight.setOn(true);
+
     mediator.registerDoors(Arrays.asList(frontDoor, backDoor, basementDoor));
     mediator.registerLights(
         Arrays.asList(kitchenLight, bathroomLight, bedroomLight, hallLight, basementLight));
+
+    Command closeTheHomeCommand = new CloseTheHomeCommand(mediator);
+    closeTheHomeCommand.execute();
 
     assertThat(frontDoor.isClosed()).isTrue();
     assertThat(backDoor.isClosed()).isTrue();
