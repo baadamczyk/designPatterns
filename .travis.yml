@@ -1,0 +1,7 @@
+# General language: java  
+# 
+# jdk:   
+#       - oraclejdk8  
+# 
+# build:
+#       - mvn clean install
