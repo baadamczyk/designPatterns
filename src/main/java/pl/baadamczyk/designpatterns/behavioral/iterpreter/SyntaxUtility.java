@@ -43,7 +43,7 @@ public class SyntaxUtility {
         eventMap.put(key, events);
 
         key = currentToken;
-        aggregates.add(keyg);
+//        aggregates.add(keyg);
 
         commands.clear();
         events.clear();
