@@ -5,20 +5,22 @@ import java.util.List;
 
 public abstract class Subject {
 
-    private List<Observer> observers = new ArrayList<>();
+  private List<Observer> observers = new ArrayList<>();
 
-    public abstract void setState(SystemStatus status);
-    public abstract SystemStatus getState();
+  public abstract SystemStatus getState();
 
-    public void attach(Observer observer) {
-        observers.add(observer);
-    }
+  public abstract void setState(SystemStatus status);
 
-    public void detach(Observer observer) {
-        observers.remove(observer);
-    }
+  public void attach(Observer observer) {
+    observers.add(observer);
+  }
 
-    public void sendStatusMessage() {
-        observers.stream().forEach(s -> s.update());
-    }
+  public void detach(Observer observer) {
+    observers.remove(observer);
+  }
+
+  // Send message to all registred observers (execute every registered observer's 'update' method
+  public void sendStatusMessage() {
+    observers.stream().forEach(s -> s.update());
+  }
 }
