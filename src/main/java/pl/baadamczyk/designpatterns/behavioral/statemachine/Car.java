@@ -2,7 +2,7 @@ package pl.baadamczyk.designpatterns.behavioral.statemachine;
 
 import lombok.Getter;
 import lombok.Setter;
-import sun.plugin.dom.exception.InvalidStateException;
+import lombok.SneakyThrows;
 
 @Getter
 public class Car {
@@ -23,27 +23,30 @@ public class Car {
     this.state = queuedState;
   }
 
+  @SneakyThrows
   public void takeUp() {
     if (state.equals(this.queuedState)) {
       state.handleRequest();
     } else {
-      throw new InvalidStateException("This operation is not allowed for car of current state!");
+      throw new InvalidStateException();
     }
   }
 
+  @SneakyThrows
   public void diagnose() {
     if (state.equals(this.takenUpState)) {
       state.handleRequest();
     } else {
-      throw new InvalidStateException("This operation is not allowed for car of current state!");
+      throw new InvalidStateException();
     }
   }
 
+  @SneakyThrows
   public void repair() {
     if (state.equals(this.diagnosedState)) {
       state.handleRequest();
     } else {
-      throw new InvalidStateException("This operation is not allowed for car of current state!");
+      throw new InvalidStateException();
     }
   }
 }
