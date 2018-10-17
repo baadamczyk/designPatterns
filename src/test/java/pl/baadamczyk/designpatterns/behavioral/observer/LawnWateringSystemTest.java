@@ -41,4 +41,21 @@ public class LawnWateringSystemTest {
     assertThat(jet1.isSpraying()).isFalse();
     assertThat(jet2.isSpraying()).isFalse();
   }
+
+  @Test
+  public void shouldTurnOffWateringSystem_whenErrorFromJetIsReported() {
+      //2: Setup test environment
+      WateringJet jet1 = new WateringJet(driver, false);
+      WateringJet jet2 = new WateringJet(driver, false);
+
+      driver.setState(SystemStatus.ON);
+      driver.sendStatusMessage();
+
+      //3: Report error on Watering Jet
+      jet2.reportError();
+
+      assertThat(jet1.isSpraying()).isFalse();
+      assertThat(jet2.isSpraying()).isFalse();
+      assertThat(driver.getState()).isEqualTo(SystemStatus.OFF);
+  }
 }
