@@ -10,7 +10,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class PartsOrderTemplateTest {
 
-  private OrderTemplate order;
+  private PartsOrderTemplate order;
   private List<OrderItem> orderedItems;
 
   @BeforeEach
@@ -26,28 +26,25 @@ public class PartsOrderTemplateTest {
 
   @Test
   public void shouldSumUpCosts_whenUsingInStoreOrder() {
-    order = new InStoreOrder(orderedItems);
+    order = new InStorePartsOrder(orderedItems);
     double orderSum = order.processOrder();
 
     assertThat(orderSum).isEqualTo(964.85);
-    //TODO: bag: 2zl
   }
 
   @Test
   public void shouldSumUpCosts_whenUsingWebOrder() {
-    order = new WebOrder(orderedItems);
+    order = new InternetPartsOrder(orderedItems);
     double orderSum = order.processOrder();
 
-    assertThat(orderSum).isEqualTo(1021.05);
-    //TODO: packaging: 5zl, delivery: 53.20
+    assertThat(orderSum).isEqualTo(1001.79);
   }
 
   @Test
   public void shouldSumUpCosts_whenUsingPhoneOrder() {
-    order = new PhoneOrder(orderedItems);
+    order = new PhonePartsOrder(orderedItems);
     double orderSum = order.processOrder();
 
     assertThat(orderSum).isEqualTo(1036.05);
-    //TODO: operationalfee: 15zl, packaging: 5zl, delivery: 53.20
   }
 }
