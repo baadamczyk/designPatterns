@@ -3,7 +3,7 @@ package pl.baadamczyk.designpatterns.behavioral.visitor;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PartsHandler extends Part{
+public class PartsHandler extends Part {
 
   private List<Part> partList;
 
@@ -15,7 +15,7 @@ public class PartsHandler extends Part{
       partList.add(part);
   }
 
-  public void accept(CarPartsDiagnosisVisitor visitor) {
-      partList.stream().forEach(p -> p.accept(visitor));
+  public void accept(PartsVisitor visitor) {
+    partList.forEach(p -> p.accept(visitor));
   }
 }

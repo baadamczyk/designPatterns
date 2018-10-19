@@ -5,11 +5,14 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.function.Supplier;
 import java.util.stream.Stream;
+
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class CarPartsVisitorTest {
 
-  private Stream<Part> partsStream;
+  private Supplier<Stream<Part>> streamSupplier;
   private PartsHandler handler;
 
   @BeforeEach
@@ -19,33 +22,28 @@ public class CarPartsVisitorTest {
         Lists.newArrayList(
             new ShockAbsorber(), new TimingBelt(), new IgnitionCoil(), new MAPSensor());
 
-    partsStream = partsToHandle.stream();
+    streamSupplier = partsToHandle::stream;
+    streamSupplier.get().forEach(p -> handler.addPart(p));
   }
 
   @Test
   public void shouldDiagnoseParts() {
-    partsStream.forEach(p -> handler.addPart(p));
-
     handler.accept(new CarPartsDiagnosisVisitor());
 
-    partsStream.forEach(p -> assertThat(p.isDiagnosed()).isTrue());
+    streamSupplier.get().forEach(p -> assertThat(p.isDiagnosed).isTrue());
   }
 
   @Test
   public void shouldFixWornParts() {
-    partsStream.forEach(p -> handler.addPart(p));
+    handler.accept(new CarPartsFixVisitor());
 
-    handler.accept(new CarPartsDiagnosisVisitor());
-
-    partsStream.forEach(p -> assertThat(p.isDiagnosed()).isTrue());
+    streamSupplier.get().forEach(p -> assertThat(p.isFixed).isTrue());
   }
 
   @Test
   public void shouldReplaceWornParts() {
-    partsStream.forEach(p -> handler.addPart(p));
+    handler.accept(new CarPartsReplacementVisitor());
 
-    handler.accept(new CarPartsDiagnosisVisitor());
-
-    partsStream.forEach(p -> assertThat(p.isDiagnosed()).isTrue());
+    streamSupplier.get().forEach(p -> assertThat(p.isReplaced).isTrue());
   }
 }
