@@ -7,7 +7,7 @@ import lombok.Value;
 @AllArgsConstructor
 public class OrderItem {
 
-    private String name;
-    private int quantity;
-    private double price;
+  private String name;
+  private int quantity;
+  private double price;
 }

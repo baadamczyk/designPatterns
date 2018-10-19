@@ -16,7 +16,7 @@ public class InternetPartsOrder extends PartsOrderTemplate {
         .sum();
   }
 
-  //This method will apply 2% discount for internet purchase
+  // This method will apply 2% discount for internet purchase
   private double applyInternetPurchaseDiscount(double price) {
     return price * 0.98;
   }

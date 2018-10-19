@@ -23,7 +23,7 @@ public class PhonePartsOrder extends PartsOrderTemplate {
     return 53.20;
   }
 
-  //Apply operational fee
+  // Apply operational fee
   @Override
   public double applyOtherFees() {
     return 15;
